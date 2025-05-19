@@ -1,0 +1,26 @@
+.location {
+	padding: 1em;
+	border-radius: 12px;
+	background-color: #00000040;
+	box-shadow: 6px 6px 0px #00000080;
+	color: #ccc;
+}
+.location_name {
+	color: #73a820;
+	margin: 0;
+	text-align: center;
+}
+.location_content {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+.location_item b{
+	color: white;
+	display: block;
+	font-size: medium;
+
+}
+.location_item {
+	font-size: small;
+}
