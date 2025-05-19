@@ -10,11 +10,11 @@ function Location({ location }) {
 		<div className="location">
 			<h2 className="location_name">{location.name}</h2>
 			<div className="location_content">
-				<h3 className="location_item"> <b>Type:</b> {location.type}</h3>
-				<h3 className="location_item"> <b>Dimension:</b> {location.dimension}</h3>
-				<h3 className="location_item">
+				<p className="location_item"> <b>Type:</b> {location.type}</p>
+				<p className="location_item"> <b>Dimension:</b> {location.dimension}</p>
+				<p className="location_item">
 					<b>Residents:</b> {TotalResidentsNumber} {TotalResidentsText}{' '}
-				</h3>
+				</p>
 			</div>
 		</div>
 	);

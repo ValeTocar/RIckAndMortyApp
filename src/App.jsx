@@ -17,6 +17,7 @@ function App() {
 	return (
 		<>
 			<header className="header" />
+      <h3 className='header_text'>Rick And Morty</h3>
 			<main className="main">
 				{/* Search Section*/}
 				<section className="section">

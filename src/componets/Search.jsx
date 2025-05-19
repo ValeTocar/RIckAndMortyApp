@@ -28,7 +28,9 @@ function Search({ onSearch }) {
 	};
 
 	return (
+		
 		<>
+			
     <p className='form_input_value'>Search a location ID from the (1-126)</p>
 			<div className='form_container'>
         

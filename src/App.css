@@ -1,9 +1,28 @@
 .header {
-	height: 50dvh;
+	height: 40dvh;
 	background-image: url('/headerapp.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5em;
+}
+.header_text {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: #73a820;
+  text-decoration: underline;
+  text-decoration-color: #00ff00;
+  text-decoration-thickness: 2px;
 }
 
 .main {
@@ -12,12 +31,31 @@
   padding: 0 1em;
 }
 .section {
-  border : 2px solid white;
+  
   padding-block: 3em;
 }
 .container {
-  border : 2px solid yellowgreen;
+ 
   padding-inline: 1em;
   max-width: 1200px;
   margin-inline: auto;
+}
+@media (max-width: 768px) {
+  .header {
+    height: 15vh;
+    background-size: min(100%, 50vh);
+  }
+  .header_text {
+    font-size: 2em;
+  }
+  .section {
+  
+  padding-block: 1em;
+}
+.container {
+ 
+  padding-inline: 0.75em;
+  
+}
+  
 }
