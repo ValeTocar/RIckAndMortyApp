@@ -1,8 +1,13 @@
 .resident {
 
   border-radius: 12px;
-  background-color: #00000040;
+  background-color: #59880d;
   overflow: hidden;
+  box-shadow: 6px 6px 0px #00000080;
+  
+}
+.resident:hover {
+  box-shadow: 6px 6px 0px #00000080, 0px 0px 10px #73a820;
 }
 .resident__image {
   position: relative;
@@ -23,7 +28,7 @@ position: absolute;
 text-transform: capitalize;
 top: 20px;
 left: 0;
-color: white;
+color: #ccc;
 background-color: #05282e;
 padding: 5px 10px;
 border-radius: 0px 12px 12px 0px;
@@ -48,13 +53,13 @@ gap: 6px;
   background-color: #c79409;
 }
 .resident_body{
-  color: #ccc;
+  color: white;
   padding: 12px;
 }
 .resident_name{
   margin: 0;
   text-align: center;
   border-bottom: 1px solid #cccccccc;
-  padding-bottom: 0,50em;
-  color: #73a820;
+  padding-bottom: 0.5em;
+  color: #000;
 }
