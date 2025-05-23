@@ -5,25 +5,25 @@ import './Residents.css';
 
 function ResidentsList({ residents }) {
   const [currentPage, setCurentPage] = useState(1);
-  const residentsPerPage = 6;
+  const residentsPage = 6;
 
-  const indexOfLastResident = currentPage * residentsPerPage;
-  const indexOfFirstResident = indexOfLastResident - residentsPerPage;
+  const indexOfLastResident = currentPage * residentsPage;
+  const indexOfFirstResident = indexOfLastResident - residentsPage;
   const currentResidents = residents.slice(indexOfFirstResident, indexOfLastResident);
 
-  const totalPages = Math.ceil(residents.length / residentsPerPage);
+  const totalPages = Math.ceil(residents.length / residentsPage);
 
   const paginate = (pageNumber) => {
     setCurentPage(pageNumber);
   };
 
-  const goToPrevPage = () => {
+  const goPrevPage = () => {
     if (currentPage > 1) {
       setCurentPage(currentPage - 1);
     }
   };
 
-  const goToNextPage = () => {
+  const goNextPage = () => {
     if (currentPage < totalPages) {
       setCurentPage(currentPage + 1);
     }
@@ -51,11 +51,11 @@ function ResidentsList({ residents }) {
           <ResidentCard key={resident} url={resident} />
         ))}
       </div>
-      {residents.length > residentsPerPage && (
+      {residents.length > residentsPage && (
         <div className="pagination">
           <button
             className={`pagination_button ${currentPage === 1 ? 'disabled' : ''}`}
-            onClick={goToPrevPage}
+            onClick={goPrevPage}
             disabled={currentPage === 1}
           >
             <FaChevronLeft />
@@ -73,7 +73,7 @@ function ResidentsList({ residents }) {
 
           <button
             className={`pagination_button ${currentPage === totalPages ? 'disabled' : ''}`}
-            onClick={goToNextPage}
+            onClick={goNextPage}
             disabled={currentPage === totalPages}
           >
             <FaChevronRight />
@@ -81,7 +81,7 @@ function ResidentsList({ residents }) {
         </div>
       )}
 
-      {residents.length === 0 && <h2 className="no-residents">There are no residents.</h2>}
+      {residents.length === 0 && <h2 className="no-residents">No Residents found</h2>}
     </>
   );
 }
