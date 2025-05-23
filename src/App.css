@@ -60,3 +60,8 @@
 		padding-inline: 0.75em;
 	}
 }
+.loading{
+	color: #a2ce5c;
+	font-size: 1.5em;
+	text-align: center;
+}

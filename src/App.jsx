@@ -31,7 +31,7 @@ function App() {
 				{/* Location Section*/}
 				<section className="section">
 					<div className="container">
-						{loading ? <h1>Loading...</h1> : <Location location={location} />}
+						{loading ? <h1 className='loading'>Loading...</h1> : <Location location={location} />}
 					</div>
 				</section>
 				{/* Residents Section*/}

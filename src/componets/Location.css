@@ -7,11 +7,11 @@
 	text-align: center;
 	width: 50%;
 	margin: 0 auto;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 10px rgba(84, 224, 91, 0.3);
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 .location:hover {
-	box-shadow: 6px 6px 0px #00000080, 0px 0px 10px #73a820;
+	box-shadow: 6px 6px 0px #00000080, 10px 10px 10px #73a820;
 }
 .location_name {
 	color: #73a820;

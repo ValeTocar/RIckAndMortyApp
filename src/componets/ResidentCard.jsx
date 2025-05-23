@@ -9,7 +9,7 @@ function ResidentCard({ url }) {
 		fetchingData(url);
 	}, [url]);
 
-	if (loading) return <p>Loading...</p>;
+	if (loading) return <p className='loading'>Loading...</p>;
 
   const TotalEpissodesNumber = resident?.episode?.length;
   
@@ -32,8 +32,8 @@ function ResidentCard({ url }) {
 
 			<h2 className='resident_name'>{resident?.name}</h2>
       <div className='resident__content'>
-        <p className="resident_item"> <b>Specie:</b>{resident?.species} </p>
-        <p className="resident_item"> <b>Origin:</b>{resident?.origin?.name} </p>
+        <p className="resident_item"> <b>Specie: </b>{resident?.species} </p>
+        <p className="resident_item"> <b>Origin: </b>{resident?.origin?.name} </p>
         <p className="resident_item"> <b>Epissodes where appear:</b> {TotalEpissodesNumber} {TotalEpissodesText} </p>
       </div>
       </div>

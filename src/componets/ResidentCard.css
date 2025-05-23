@@ -1,18 +1,17 @@
 .resident {
-
   border-radius: 12px;
-  background-color: #59880d;
+  background-color: #64921b;
   overflow: hidden;
   box-shadow: 6px 6px 0px #00000080;
   
 }
 .resident:hover {
-  box-shadow: 6px 6px 0px #00000080, 0px 0px 10px #73a820;
+  box-shadow: 6px 6px 0px #00000080, 3px 3px 10px #9dff00;
 }
 .resident__image {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -59,7 +58,26 @@ gap: 6px;
 .resident_name{
   margin: 0;
   text-align: center;
-  border-bottom: 1px solid #cccccccc;
+  border-bottom: 1px solid white;
   padding-bottom: 0.5em;
   color: #000;
+}
+.resident_item {
+  color : white;
+}
+.resident_item b {
+  color: rgb(19, 18, 18);
+  
+}
+.loading{
+ 	color: #a2ce5c;
+	font-size: 1em;
+	text-align: center;
+  
+}
+@media screen and (max-width: 768px) {
+ .resident__image {
+  height: 200px;
+}
+  
 }
