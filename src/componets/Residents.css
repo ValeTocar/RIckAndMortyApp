@@ -1,11 +1,11 @@
 .residents {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2em 1em;
-  display: grid;
-  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)) ;
-  grid-template-rows: auto auto ;
-  gap: 25px;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2em 1em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: auto auto;
+	gap: 25px;
 }
 
 .pagination {
@@ -30,21 +30,43 @@
 	justify-content: center;
 }
 
-
 .pagination_button.active {
 	background-color: #70a925;
 	color: #fff;
 }
-
 
 .no-residents {
 	text-align: center;
 	color: #70a925;
 	margin-top: 2rem;
 }
+.container_button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button_github {
+	background-color: black;
+	color: #fff;
+padding: 10px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+box-shadow: 6px 6px 0px #104e3480;
+cursor: pointer;
+outline: none;
+border: none;
+font-size: medium;
+border-radius: 5px;
+}
+.button_github:hover{
+	box-shadow: 3px 3px 3px #f0e0e04d;
+	transform: scale(1.05);
+	transition: all 0.3s ease;
+}
+.icongit{
+	height: 12px;
+}
 @media screen and (max-width: 768px) {
-  .residents {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-  
+	.residents {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
 }

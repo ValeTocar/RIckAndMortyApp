@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ResidentCard from './ResidentCard';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './Residents.css';
+import { FaGithub } from "react-icons/fa";
 
 function ResidentsList({ residents }) {
   const [currentPage, setCurentPage] = useState(1);
@@ -40,9 +41,12 @@ function ResidentsList({ residents }) {
     if (currentPage + range > totalPages) {
       start = Math.max(1, start - (range - (totalPages - currentPage)));
     }
+  return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+};
 
-    return Array.from({ length: end - start + 1 }, (_, i) => start + i);
-  };
+const handleClick = () => {
+  window.open("https://github.com/ValeTocar/RIckAndMortyApp", "_blank")
+};
 
   return (
     <>
@@ -82,6 +86,15 @@ function ResidentsList({ residents }) {
       )}
 
       {residents.length === 0 && <h2 className="no-residents">No Residents found</h2>}
+<div className='container_button'>
+      <button
+      className='button_github'
+      onClick={handleClick}
+      >
+<FaGithub className='icongit' />GIT-HUB
+      </button>
+
+</div>
     </>
   );
 }
