@@ -36,7 +36,7 @@ function Search({ onSearch }) {
         
 				<input
 					type="number"
-					min={0}
+					min={1}
 					placeholder="Search a location ID"
 					ref={inputRef}
 					onKeyDown={handleKeyDown}
